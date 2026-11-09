@@ -1,69 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Aybee1000 Real Estate - Lagos</title>
+<title>Lagos Island Realtor | Lekki, Ajah, Ibeju Lekki</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-body{font-family:Arial;margin:0;background:#f4f4f4}
-header{background:#0a7a42;color:white;padding:20px;text-align:center}
-header h1{margin:0;font-size:30px}
-header p{margin:5px 0}
-.hero{background:#111;color:white;padding:40px 20px;text-align:center}
-.hero h2{font-size:28px}
-.btn{display:inline-block;background:#25D366;color:white;padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px}
-.card{background:white;margin:15px;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px #ccc}
-.card img{width:100%;height:200px;object-fit:cover}
-.card div{padding:15px}
-.price{color:#0a7a42;font-weight:bold;font-size:20px}
-footer{background:#111;color:white;text-align:center;padding:20px}
+*{box-sizing:border-box}
+body{font-family:'Inter',Arial,sans-serif;margin:0;background:#fff;color:#111;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.price,.serif{font-family:'Playfair Display',Georgia,serif}
+.top{background:#000;color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:2.5px;font-weight:600}
+.top b{font-family:'Playfair Display',serif;font-size:18px;letter-spacing:2px}
+.hero{position:relative;height:500px;background:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200') center/cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.78),rgba(0,0,0,.05))}
+.hero-text{position:absolute;bottom:32px;left:22px;right:22px;color:#fff;z-index:2}
+.hero-text p{letter-spacing:4px;font-size:11px;color:#d4af37;margin:0;font-weight:700}
+.hero-text h1{font-size:42px;line-height:1.05;margin:10px 0;font-weight:700;letter-spacing:-0.5px}
+.hero-text span{font-size:15px;color:#eee;font-weight:400;line-height:1.5}
+.badge{background:#d4af37;color:#000;display:inline-block;padding:8px 14px;border-radius:20px;font-size:11px;letter-spacing:2px;font-weight:700;margin:0 20px}
+.search{background:#fff;margin:-22px 20px 20px;position:relative;z-index:3;border-radius:10px;box-shadow:0 8px 25px rgba(0,0,0,.12);padding:16px}
+.search input,.search select{width:100%;padding:13px;margin:5px 0;border:1px solid #ddd;border-radius:8px;font-size:15px;font-family:'Inter',sans-serif}
+.search button{width:100%;background:#000;color:#fff;padding:14px;border:none;border-radius:8px;font-weight:700;letter-spacing:1.5px;font-family:'Inter',sans-serif;font-size:13px}
+.section{padding:5px 20px}
+.section h2{font-size:30px;font-weight:700;letter-spacing:-0.5px;margin-bottom:5px}
+.section .sub{color:#666;font-size:15px;line-height:1.6}
+.card{margin:22px 0;border:1px solid #eee;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:270px;object-fit:cover}
+.card-body{padding:18px}
+.tag{background:#000;color:#d4af37;font-size:10px;letter-spacing:2px;padding:6px 11px;border-radius:20px;font-weight:700}
+.price{font-size:32px;font-weight:700;margin:12px 0 6px;letter-spacing:-0.5px}
+.loc{font-size:17px;line-height:1.4;margin:0;font-weight:600}
+.details{color:#666;font-size:14.5px;line-height:1.65;margin-top:8px}
+.btn{display:block;text-align:center;background:#000;color:#fff;padding:15px;border-radius:8px;text-decoration:none;font-weight:700;margin-top:14px;letter-spacing:0.5px;font-size:14px}
+.btn-green{background:#25D366}
+.why{background:#fafafa;padding:28px 20px;text-align:center}
+.why h3{font-size:26px}
+.why div{margin:18px 0;line-height:1.6}
+footer{background:#000;color:#fff;text-align:center;padding:28px 15px;font-size:14px;line-height:1.7}
+footer b{font-family:'Playfair Display',serif;letter-spacing:2px;font-size:18px}
 </style>
 </head>
 <body>
 
-<header>
-<h1>Aybee1000 Real Estate</h1>
-<p>Land & Houses For Sale In Lagos</p>
-</header>
+<div class="top"><b>LAGOS ISLAND</b><span>REALTOR</span></div>
 
 <div class="hero">
-<h2>Find Your Dream Land & House</h2>
-<p>Trusted. Affordable. Verified.</p>
-<a class="btn" href="https://wa.me/2348100000000">Chat On WhatsApp</a>
+<div class="hero-text">
+<p>FEATURED LISTING • LAGOS ISLAND</p>
+<h1>748SQM Land<br>Pinnock Beach Estate</h1>
+<span>Phase 3, Osapa London, Lekki • ₦850,000,000 NET</span>
+</div>
+</div>
+
+<div style="padding:18px 0 0;text-align:center"><span class="badge">★ LAGOS ISLAND REALTOR ★</span></div>
+
+<div class="search">
+<input placeholder="Search Location... e.g Lekki, Ajah, Ibeju">
+<select><option>All Property Types</option><option>Land</option><option>House / Duplex</option><option>Flat</option></select>
+<select><option>All Prices</option><option>Below ₦50M</option><option>₦50M - ₦100M</option><option>Above ₦100M</option></select>
+<button>SEARCH PROPERTIES →</button>
+</div>
+
+<div class="section">
+<h2>Curated Collection</h2>
+<p class="sub">The finest lands & homes on Lagos Island. Verified. Trusted. By your Lagos Island Realtor.</p>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900">
+<div class="card-body">
+<span class="tag">FEATURED • LEKKI</span>
+<p class="price">₦850,000,000</p>
+<p class="loc">748SQM Land — Pinnock Beach Estate Phase 3</p>
+<p class="details">Osapa London, Lekki | Estate Deed & Registered Survey | 24HR Light | Fully Secure Access Entry Estate</p>
+<a class="btn" href="https://wa.me/2348100000000?text=Hi, I want the Pinnock Beach 748SQM Land">View This Property →</a>
+</div>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800">
-<div>
-<h3>3 Bedroom Flat - Lekki</h3>
+<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900">
+<div class="card-body">
+<span class="tag">LEKKI</span>
 <p class="price">₦45,000,000</p>
-<p>3 Bed | 3 Bath | All Rooms Ensuite | Good Road</p>
+<p class="loc">3 Bedroom Flat — Lekki</p>
+<p class="details">3 Bed | 3 Bath | All Rooms Ensuite | Good Road</p>
 <a class="btn" href="https://wa.me/2348100000000?text=Hi, I want the Lekki 3 Bedroom Flat">Enquire Now</a>
 </div>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800">
-<div>
-<h3>Full Plot of Land - Ibeju Lekki</h3>
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900">
+<div class="card-body">
+<span class="tag">IBEJU LEKKI</span>
 <p class="price">₦18,000,000</p>
-<p>600sqm | Dry Land | C of O | Fenced & Gated</p>
+<p class="loc">Full Plot of Land — Ibeju Lekki</p>
+<p class="details">600sqm | Dry Land | C of O | Fenced & Gated</p>
 <a class="btn" href="https://wa.me/2348100000000?text=Hi, I want the Ibeju Lekki Land">Enquire Now</a>
 </div>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800">
-<div>
-<h3>4 Bedroom Duplex - Ajah</h3>
+<img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900">
+<div class="card-body">
+<span class="tag">AJAH</span>
 <p class="price">₦85,000,000</p>
-<p>4 Bed | POP | Fitted Kitchen | Parking Space</p>
-<a class="btn" href="https://wa.me/2348100000000?text=Hi, I want the Ajah Duplex">Enquire Now</a>
+<p class="loc">4 Bedroom Duplex — Ajah</p>
+<p class="details">4 Bed | POP | Fitted Kitchen | Parking Space</p>
+<a class="btn" href="https://wa.me/+2348101524592?text=Hi, I want the Ajah Duplex">Enquire Now</a>
 </div>
 </div>
 
+</div>
+
+<div class="why">
+<h3>Your Lagos Island Realtor</h3>
+<p style="color:#666;line-height:1.6">I no be mainland agent. I dey Island everyday. I sabi Lekki, Ajah, Ibeju Lekki, Osapa London well well.</p>
+<div><b>✓ Verified Titles</b><br><span style="color:#666">No Omonile wahala. Documents checked.</span></div>
+<div><b>✓ Direct Inspection</b><br><span style="color:#666">We go follow you go see am.</span></div>
+<div><b>✓ Island Expert</b><br><span style="color:#666">Lekki • Ajah • Ibeju Lekki • Osapa London</span></div>
+<a class="btn btn-green" href="https://wa.me/2348100000000">Chat On WhatsApp</a>
+</div>
+
 <footer>
+<p><b>LAGOS ISLAND REALTOR</b><br>Lekki • Ajah • Ibeju Lekki</p>
 <p>Call / WhatsApp: 0810-000-0000</p>
-<p>Aybee1000 Real Estate - Lagos, Nigeria</p>
+<p>© 2026 Lagos Island Realtor. All Rights Reserved.</p>
 </footer>
 
 </body>
