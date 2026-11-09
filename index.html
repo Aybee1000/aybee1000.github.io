@@ -4,89 +4,141 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lagos Island Realtor | Lekki, Ajah, Ibeju Lekki</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#fff;color:#111;line-height:1.6}
-.top{padding:18px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff;z-index:10}
-.logo{font-family:'Playfair Display',serif;font-weight:900;font-size:19px;letter-spacing:1px;line-height:1.1}
-.logo span{font-size:11px;letter-spacing:3px;display:block;font-family:'Inter',sans-serif;font-weight:700;color:#666}
-.top a{background:#111;color:#fff;padding:10px 16px;border-radius:30px;text-decoration:none;font-size:13px;font-weight:700}
-.hero{padding:28px 20px 10px;text-align:center}
-.badge{display:inline-block;background:#FFF3CD;padding:7px 14px;border-radius:30px;font-size:12px;font-weight:700;margin-bottom:16px}
-.hero h1{font-family:'Playfair Display',serif;font-size:42px;line-height:1.05;font-weight:900}
-.hero p{color:#555;margin:16px 0 20px;font-size:16px}
-.card{margin:18px 16px;background:#fff;border:1px solid #eee;border-radius:20px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,0.06)}
-.card img{width:100%;height:240px;object-fit:cover;display:block}
-.card-body{padding:18px}
-.tag{font-size:11px;letter-spacing:2px;font-weight:800;color:#888}
-.card-body h2{font-family:'Playfair Display',serif;font-size:26px;margin:6px 0}
-.card-body p{color:#555;font-size:15px}
-.price{font-size:22px;font-weight:800;margin:12px 0}
-.btn-black{display:block;background:#111;color:#fff;text-align:center;padding:15px;border-radius:12px;text-decoration:none;font-weight:700;margin-top:14px}
-.section{padding:30px 20px;text-align:center}
-.section h2{font-family:'Playfair Display',serif;font-size:34px;line-height:1.1}
-.section p{color:#666;font-size:17px;margin-top:14px}
-.check{margin-top:22px;text-align:center}
-.check b{font-size:19px}
-.check p{margin-top:4px;margin-bottom:18px}
-.btn-green{display:block;background:#25D366;color:#fff;text-align:center;padding:16px;border-radius:12px;text-decoration:none;font-weight:800;font-size:17px;margin:20px 16px}
-.footer{background:#111;color:#fff;padding:30px 20px;text-align:center}
-.footer h3{font-family:'Playfair Display',serif;font-size:24px}
-.footer p{color:#bbb;margin-top:8px;font-size:15px}
-.footer a{color:#fff;font-weight:700;text-decoration:none}
-.call-box{background:#fff;color:#111;padding:16px;border-radius:14px;margin-top:18px}
-.call-box b{font-size:20px;letter-spacing:0.5px}
+body{font-family:'Inter',sans-serif;background:#F8F6F2;color:#111;line-height:1.5}
+.top{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;background:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #eee}
+.logo{font-family:'Playfair Display',serif;font-weight:900;font-size:18px;line-height:1}
+.logo small{display:block;font-family:'Inter',sans-serif;font-size:9px;letter-spacing:2px;color:#888;font-weight:700;margin-top:2px}
+.top-right{display:flex;gap:10px;align-items:center}
+.top-right a{font-size:12px;text-decoration:none;color:#111;font-weight:600}
+.top-right .btn{background:#111;color:#fff;padding:8px 14px;border-radius:20px}
+.hero{position:relative;margin:12px;border-radius:18px;overflow:hidden;height:380px}
+.hero img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.75),rgba(0,0,0,0.1) 60%);padding:18px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff}
+.hero-overlay .tag{font-size:10px;letter-spacing:2px;background:rgba(255,255,255,0.2);padding:5px 10px;border-radius:20px;display:inline-block;width:fit-content}
+.hero-overlay h1{font-family:'Playfair Display',serif;font-size:30px;line-height:1.1;margin:10px 0 6px}
+.hero-overlay p{font-size:13px;color:#ddd}
+.price-row{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.price{font-size:22px;font-weight:800}
+.price small{display:block;font-size:11px;color:#ccc;font-weight:400}
+.enquire{background:#fff;color:#111;padding:10px 16px;border-radius:20px;text-decoration:none;font-weight:700;font-size:13px}
+.search{background:#fff;margin:0 12px 16px;padding:12px;border-radius:14px;display:flex;gap:8px;box-shadow:0 4px 20px rgba(0,0,0,0.06);margin-top:-10px;position:relative;z-index:5}
+.search input,.search select{flex:1;padding:12px;border:1px solid #eee;border-radius:10px;font-size:13px;outline:none}
+.search button{background:#111;color:#fff;border:none;padding:12px 16px;border-radius:10px;font-weight:700}
+.section{padding:10px 16px 20px}
+.section h2{font-family:'Playfair Display',serif;font-size:24px}
+.section p{color:#666;font-size:13px;margin:4px 0 14px}
+.card{background:#fff;border-radius:16px;overflow:hidden;margin-bottom:16px;box-shadow:0 4px 18px rgba(0,0,0,0.05)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:14px}
+.card-body h3{font-size:16px;line-height:1.3}
+.card-body p{font-size:12px;color:#666;margin:6px 0}
+.card-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.card-bottom b{font-size:17px}
+.card-bottom a{background:#111;color:#fff;padding:8px 14px;border-radius:20px;text-decoration:none;font-size:12px;font-weight:700}
+.about{background:#fff;margin:12px;border-radius:16px;padding:20px;text-align:center}
+.about h2{font-family:'Playfair Display',serif;font-size:24px}
+.about p{color:#555;font-size:14px;margin:10px 0}
+.check{text-align:left;margin-top:14px}
+.check b{display:block;margin-top:10px}
+.check span{color:#666;font-size:13px}
+.btn-green{display:block;background:#25D366;color:#fff;text-align:center;padding:15px;border-radius:12px;text-decoration:none;font-weight:800;margin:12px}
+.footer{background:#111;color:#fff;padding:28px 16px;text-align:center}
+.footer h3{font-family:'Playfair Display',serif;font-size:22px;letter-spacing:1px}
+.footer p{color:#aaa;font-size:13px;margin:8px 0}
+.footer a{color:#fff;text-decoration:none;font-weight:700}
 </style>
 </head>
 <body>
 
 <div class="top">
-  <div class="logo">LAGOS ISLAND<span>REALTOR</span></div>
-  <a href="https://wa.me/2348101524592">Enquire Now</a>
+  <div class="logo">LAGOS ISLAND<small>REALTOR</small></div>
+  <div class="top-right">
+    <a href="#listings">Listings</a>
+    <a href="#about">About</a>
+    <a class="btn" href="https://wa.me/2348101524592">Enquire Now</a>
+  </div>
 </div>
 
 <div class="hero">
-  <div class="badge">● AVAILABLE NOW IN LAGOS ISLAND</div>
-  <h1>Own Land<br>On The Island.<br>Without Stress.</h1>
-  <p>Verified plots in Lekki, Ajah, Ibeju Lekki and Osapa London. Direct inspection. No Omonile issues.</p>
-</div>
-
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=80">
-  <div class="card-body">
-    <div class="tag">PINNOCK BEACH ESTATE • LEKKI</div>
-    <h2>Pinnock Beach Estate</h2>
-    <p>Full Plot • Dry Land • Fenced & Gated • C of O<br>5 mins to Lekki Phase 1</p>
-    <div class="price">₦85,000,000 <span style="font-size:13px;color:#888;font-weight:400">/ Full Plot</span></div>
-    <a class="btn-black" href="https://wa.me/2348101524592?text=Hello,%20I%20am%20interested%20in%20Pinnock%20Beach%20Estate">Enquire Now</a>
+  <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80">
+  <div class="hero-overlay">
+    <span class="tag">PINNOCK BEACH ESTATE • LEKKI</span>
+    <h1>Pinnock Beach<br>Estate</h1>
+    <p>Full Plot • Dry Land • Fenced & Gated • C of O</p>
+    <div class="price-row">
+      <div class="price">₦85,000,000<small>Full Plot</small></div>
+      <a class="enquire" href="https://wa.me/2348101524592?text=Hello,%20I%20am%20interested%20in%20Pinnock%20Beach%20Estate">Enquire Now</a>
+    </div>
   </div>
 </div>
 
-<div class="section">
-  <h2>Your Lagos Island<br>Realtor</h2>
+<div class="search">
+  <input placeholder="Search Location... e.g. Lekki">
+  <select><option>All Property Types</option><option>Land</option><option>House</option></select>
+  <button>Search</button>
+</div>
+
+<div class="section" id="listings">
+  <h2>Curated Collection</h2>
+  <p>The finest lands & homes on the Island, handpicked by your Lagos Island Realtor.</p>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=80">
+    <div class="card-body">
+      <h3>Pinnock Beach Estate — Pinnock Beach Estate Phase 2</h3>
+      <p>Full Plot • Dry Land • Fenced & Gated • C of O • 5 mins to Lekki Phase 1</p>
+      <div class="card-bottom"><b>₦85,000,000</b><a href="https://wa.me/2348101524592?text=Hello,%20I%20want%20Pinnock%20Beach%20Estate">Enquire Now</a></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80">
+    <div class="card-body">
+      <h3>Osapa London — Lekki</h3>
+      <p>3 Bedroom Flat • Lekki • Family Area • Good Road • Secure Estate</p>
+      <div class="card-bottom"><b>₦45,000,000</b><a href="https://wa.me/2348101524592?text=Hello,%20I%20want%20Osapa%20London">Enquire Now</a></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80">
+    <div class="card-body">
+      <h3>Ajah — Ibeju Lekki</h3>
+      <p>Full Plot of Land • Ajah • Dry Land • C of O • Close to Main Road</p>
+      <div class="card-bottom"><b>₦35,000,000</b><a href="https://wa.me/2348101524592?text=Hello,%20I%20want%20Ajah%20Land">Enquire Now</a></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&q=80">
+    <div class="card-body">
+      <h3>Ibeju Lekki — Osapa London Duplex</h3>
+      <p>4 Bedroom Duplex • Ibeju Lekki • All Rooms Ensuite • Fitted Kitchen • POP</p>
+      <div class="card-bottom"><b>₦95,000,000</b><a href="https://wa.me/2348101524592?text=Hello,%20I%20want%20Ibeju%20Lekki%20Duplex">Enquire Now</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="about" id="about">
+  <h2>Your Lagos Island Realtor</h2>
   <p>I am not a mainland agent. I am on the Island every day. I know Lekki, Ajah, Ibeju Lekki, and Osapa London very well.</p>
   <div class="check">
-    <b>✓ Verified Titles</b>
-    <p>No Omonile problems. All documents have been checked.</p>
-    <b>✓ Direct Inspection</b>
-    <p>We will take you to see the land in person.</p>
-    <b>✓ Island Expert</b>
-    <p>Lekki • Ajah • Ibeju Lekki • Osapa London</p>
+    <b>✓ Verified Titles</b><span>No Omonile problems. All documents have been checked.</span>
+    <b>✓ Direct Inspection</b><span>We will take you to see the land in person.</span>
+    <b>✓ Island Expert</b><span>Lekki • Ajah • Ibeju Lekki • Osapa London</span>
   </div>
+  <a class="btn-green" href="https://wa.me/2348101524592?text=Hello,%20I%20want%20to%20buy%20land%20on%20the%20Island">Chat On WhatsApp</a>
 </div>
-
-<a class="btn-green" href="https://wa.me/2348101524592?text=Hello,%20I%20want%20to%20buy%20land%20on%20the%20Island">Chat On WhatsApp</a>
 
 <div class="footer">
   <h3>LAGOS ISLAND REALTOR</h3>
   <p>Lekki • Ajah • Ibeju Lekki • Osapa London</p>
-  <div class="call-box">
-    <div style="font-size:12px;letter-spacing:2px;color:#666;font-weight:700">CALL / WHATSAPP</div>
-    <b><a href="tel:+2348101524592" style="color:#111">0810-152-4592</a></b><br>
-    <a href="https://wa.me/2348101524592" style="color:#25D366">Tap To Chat On WhatsApp →</a>
-  </div>
-  <p style="margin-top:16px;font-size:13px">© 2026 Lagos Island Realtor. All rights reserved.</p>
+  <p>Call / WhatsApp: <a href="tel:+2348101524592">0810-152-4592</a></p>
+  <p><a href="https://wa.me/2348101524592" style="color:#25D366">Tap To Chat On WhatsApp →</a></p>
+  <p style="margin-top:14px">© 2026 Lagos Island Realtor. All Rights Reserved.</p>
 </div>
 
 </body>
